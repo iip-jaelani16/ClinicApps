@@ -4,6 +4,34 @@ Clinic App build with Java JFrame
 
 # TP 2 Business Application Development
 
+> Requirement
+- Docker
+- Postgres DB
+
+> Instalation postgres DB
+```bash
+> docker run -e POSTGRES_HOST_AUTH_METHOD=md5 -e POSTGRES_PASSWORD=password -p 5433:5432 --name java_postgres -d postgres
+```
+
+Or if you already have docker on your machine, you can change the DB connection to inside the ConnectionManager class
+```java
+
+
+public class ConnectionManager {
+    public static Connection getConnection() throws SQLException, ClassNotFoundException {
+        Class.forName("org.postgresql.Driver");
+
+        String url = "jdbc:postgresql://{host}:{post}/{db_name}"; // ganti "mydatabase" dengan nama database Anda
+        String username = "{username}"; // ganti "myusername" dengan nama pengguna Anda
+        String password = "{password}"; // ganti "mypassword" dengan kata sandi Anda
+
+        Connection conn = DriverManager.getConnection(url, username, password);
+        return conn;
+    }
+}
+
+```
+
 Java Version
 
 ```bash
@@ -11,6 +39,7 @@ Java Version
 openjdk 19.0.1 2022-10-18
 OpenJDK Runtime Environment Homebrew (build 19.0.1)
 OpenJDK 64-Bit Server VM Homebrew (build 19.0.1, mixed mode, sharing)
+
 
 ```
 Maven dependencies
