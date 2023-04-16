@@ -5,6 +5,7 @@ Clinic App build with Java JFrame
 # TP 2 Business Application Development
 
 > Requirement
+- Java
 - Docker
 - Postgres DB
 
@@ -15,8 +16,6 @@ Clinic App build with Java JFrame
 
 Or if you already have docker on your machine, you can change the DB connection to inside the ConnectionManager class
 ```java
-
-
 public class ConnectionManager {
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
         Class.forName("org.postgresql.Driver");
@@ -103,4 +102,8 @@ Maven dependencies
 </project>
 ```
 
-
+The tool I use:
+- [intelliJ IDEA](https://www.jetbrains.com/idea/)
+Source:
+- https://docs.oracle.com/javase/tutorial
+- Google
