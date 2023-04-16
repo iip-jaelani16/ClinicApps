@@ -31,6 +31,17 @@ public class ConnectionManager {
 
 ```
 
+
+> The tool I use:
+- [intelliJ IDEA](https://www.jetbrains.com/idea/)
+
+
+> Source:
+- https://docs.oracle.com/javase/tutorial
+- Google
+
+
+
 Java Version
 
 ```bash
@@ -102,8 +113,3 @@ Maven dependencies
 </project>
 ```
 
-The tool I use:
-- [intelliJ IDEA](https://www.jetbrains.com/idea/)
-Source:
-- https://docs.oracle.com/javase/tutorial
-- Google
