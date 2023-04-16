@@ -14,7 +14,7 @@ Clinic App build with Java JFrame
 > docker run -e POSTGRES_HOST_AUTH_METHOD=md5 -e POSTGRES_PASSWORD=password -p 5433:5432 --name java_postgres -d postgres
 ```
 
-Or if you already have docker on your machine, you can change the DB connection to inside the ConnectionManager class
+Or if you already have DB on your machine, you can change the DB connection to inside the ConnectionManager class
 ```java
 public class ConnectionManager {
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
